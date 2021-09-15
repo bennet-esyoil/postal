@@ -5,7 +5,7 @@ RUN apt-get update \
   && apt-get install -y --no-install-recommends \
   software-properties-common \
   && apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8 \
-  && add-apt-repository 'deb [arch=amd64,i386,ppc64el] http://mirrors.coreix.net/mariadb/repo/10.3/ubuntu xenial main' \
+  && add-apt-repository 'deb [arch=amd64,i386,ppc64el] http://mirrors.coreix.net/mariadb/repo/10.2/ubuntu xenial main' \
   && (curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -) \
   && (echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list) \
   && (curl -sL https://deb.nodesource.com/setup_12.x | bash -) \
